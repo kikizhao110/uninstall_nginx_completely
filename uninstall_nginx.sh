@@ -6,6 +6,7 @@ sudo rm -rf /var/log/nginx
 sudo rm -rf /var/www/html
 sudo rm -rf /var/cache/nginx
 sudo apt-get clean
+sudo apt-get autoremove -y
 if ! command -v nginx &> /dev/null; then
     echo "Nginx has been successfully uninstalled."
 else
